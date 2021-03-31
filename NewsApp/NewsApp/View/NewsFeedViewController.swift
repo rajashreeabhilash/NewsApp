@@ -2,7 +2,7 @@
 //  NewsFeedViewController.swift
 //  NewsApp
 //
-//  Created by AADM504 on 31/3/21.
+//  Created by Rajashree on 31/3/21.
 //
 
 import UIKit
@@ -52,6 +52,15 @@ extension NewsFeedViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let storyboard = UIStoryboard(name: "NewsFeed", bundle: Bundle(for: Self.self))
+        let controller = storyboard.instantiateViewController(identifier: "NewsInfoViewController") as! NewsInfoViewController
+        controller.setUpViewModel(with: viewModel.newsList[indexPath.row])
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 }
 

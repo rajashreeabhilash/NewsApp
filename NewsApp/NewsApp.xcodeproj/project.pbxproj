@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1824CA87261539F200101E74 /* NewsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824CA86261539F200101E74 /* NewsInfoViewController.swift */; };
+		1824CA8C26153C5800101E74 /* NewsInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1824CA8B26153C5800101E74 /* NewsInfoViewModel.swift */; };
 		1893F767261422E500786871 /* NewsFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893F766261422E500786871 /* NewsFeedModel.swift */; };
 		1893F76C261422F000786871 /* NewsFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893F76B261422F000786871 /* NewsFeedViewModel.swift */; };
 		1893F7712614239200786871 /* NewsFeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893F7702614239200786871 /* NewsFeedResponse.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1824CA86261539F200101E74 /* NewsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsInfoViewController.swift; sourceTree = "<group>"; };
+		1824CA8B26153C5800101E74 /* NewsInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsInfoViewModel.swift; sourceTree = "<group>"; };
 		1893F766261422E500786871 /* NewsFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedModel.swift; sourceTree = "<group>"; };
 		1893F76B261422F000786871 /* NewsFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewModel.swift; sourceTree = "<group>"; };
 		1893F7702614239200786871 /* NewsFeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedResponse.swift; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 				18F976E226141F7400424761 /* NewsFeedViewController.swift */,
 				18F976ED26141FB000424761 /* NewsFeed.storyboard */,
 				18F976F22614215F00424761 /* NewsFeedTableViewCell.swift */,
+				1824CA86261539F200101E74 /* NewsInfoViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				1893F76B261422F000786871 /* NewsFeedViewModel.swift */,
+				1824CA8B26153C5800101E74 /* NewsInfoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -310,6 +316,8 @@
 				1893F7772614275B00786871 /* NewsFeedService.swift in Sources */,
 				1893F76C261422F000786871 /* NewsFeedViewModel.swift in Sources */,
 				18F976B226141F5A00424761 /* SceneDelegate.swift in Sources */,
+				1824CA8C26153C5800101E74 /* NewsInfoViewModel.swift in Sources */,
+				1824CA87261539F200101E74 /* NewsInfoViewController.swift in Sources */,
 				18F976F32614215F00424761 /* NewsFeedTableViewCell.swift in Sources */,
 				18F976E326141F7400424761 /* NewsFeedViewController.swift in Sources */,
 				1893F767261422E500786871 /* NewsFeedModel.swift in Sources */,

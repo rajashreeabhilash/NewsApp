@@ -68,14 +68,6 @@
                                                 <constraint firstAttribute="trailing" secondItem="kEx-Fh-hKz" secondAttribute="trailing" constant="5" id="sOa-7B-Ps7"/>
                                                 <constraint firstAttribute="bottom" secondItem="kEx-Fh-hKz" secondAttribute="bottom" constant="8" id="wvV-ST-ygm"/>
                                             </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <integer key="value" value="2"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                    <integer key="value" value="1"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="dateLabel" destination="nto-qO-zRO" id="dIP-ke-eR7"/>
@@ -109,6 +101,61 @@
             </objects>
             <point key="canvasLocation" x="1286.9565217391305" y="-5.3571428571428568"/>
         </scene>
+        <!--News-->
+        <scene sceneID="3DY-FZ-vqg">
+            <objects>
+                <viewController storyboardIdentifier="NewsInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GFW-1a-bBP" customClass="NewsInfoViewController" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4hm-PX-Jof">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBT-OH-Bcr">
+                                <rect key="frame" x="20" y="108" width="374" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41a-q4-cyr">
+                                <rect key="frame" x="20" y="204.5" width="374" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbf-R2-GdT">
+                                <rect key="frame" x="20" y="163.5" width="374" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NZA-LR-Gkt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gBT-OH-Bcr" firstAttribute="top" secondItem="NZA-LR-Gkt" secondAttribute="top" constant="20" id="1ML-Jk-lKj"/>
+                            <constraint firstItem="NZA-LR-Gkt" firstAttribute="trailing" secondItem="41a-q4-cyr" secondAttribute="trailing" constant="20" id="2Iv-Pb-PLn"/>
+                            <constraint firstItem="41a-q4-cyr" firstAttribute="leading" secondItem="NZA-LR-Gkt" secondAttribute="leading" constant="20" id="78q-lt-QZJ"/>
+                            <constraint firstItem="NZA-LR-Gkt" firstAttribute="trailing" secondItem="41a-q4-cyr" secondAttribute="trailing" constant="20" id="927-qM-dQE"/>
+                            <constraint firstItem="NZA-LR-Gkt" firstAttribute="trailing" secondItem="Sbf-R2-GdT" secondAttribute="trailing" constant="20" id="FNn-Q6-bF0"/>
+                            <constraint firstItem="Sbf-R2-GdT" firstAttribute="top" secondItem="gBT-OH-Bcr" secondAttribute="bottom" constant="36" id="IeU-4Q-qhT"/>
+                            <constraint firstItem="41a-q4-cyr" firstAttribute="top" secondItem="Sbf-R2-GdT" secondAttribute="bottom" constant="24" id="Ixo-pF-K6k"/>
+                            <constraint firstItem="Sbf-R2-GdT" firstAttribute="leading" secondItem="NZA-LR-Gkt" secondAttribute="leading" constant="20" id="WSy-4n-tdM"/>
+                            <constraint firstItem="41a-q4-cyr" firstAttribute="leading" secondItem="NZA-LR-Gkt" secondAttribute="leading" constant="20" id="YUM-Es-kdE"/>
+                            <constraint firstItem="gBT-OH-Bcr" firstAttribute="leading" secondItem="NZA-LR-Gkt" secondAttribute="leading" constant="20" id="acZ-Uk-tFi"/>
+                            <constraint firstItem="NZA-LR-Gkt" firstAttribute="trailing" secondItem="gBT-OH-Bcr" secondAttribute="trailing" constant="20" id="mmg-OS-I7U"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="News" id="a1F-OG-91a"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="contentLabel" destination="41a-q4-cyr" id="roy-AX-tBH"/>
+                        <outlet property="dateLabel" destination="Sbf-R2-GdT" id="ZgI-TG-O1p"/>
+                        <outlet property="nameLabel" destination="gBT-OH-Bcr" id="pPg-W7-G8I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5dX-GQ-dND" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2160.8695652173915" y="-5.3571428571428568"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="9j3-QS-0eg">
             <objects>
@@ -129,6 +176,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
